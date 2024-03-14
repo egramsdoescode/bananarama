@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
+    <title>Banarama</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="test.js"></script>
 </head>
 <body>
   
   <!--Creating header, making sure they have flex containers-->
-  <header class="header">
-    <div class="logo">Banana Business</div>
+  <header class="header" id="top">
+    <div class="logo">Bananarama</div>
     <nav class="nav-bar">
       <ul>
-        <li><a href="google.com">Home</a></li>
-        <li><a href="google.com">About</a></li>
-        <li><a href="google.com">Contact</a></li>  
+        <li><a href="#top">Home</a></li>
+        <li><a href="#bundles">Bundles</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>  
       </ul>
     </nav>
   </header>
@@ -25,58 +24,64 @@
   <!--Creating hero section with text, button and image-->
   <div class="hero-container">
     <div class="hero-text">
-      <h1>This website is awesome</h1>
-      <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-      <button>Sign up</button> 
+      <h1>Nature's Greatest Source of Potassium</h1>
+      <p>At your door, WEEKLY!</p>
+      <button class="hover-button">Sign up</button> 
     </div>
     <div class="img-container">
-      <img src="https://images.pexels.com/photos/61127/pexels-photo-61127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a bright banana bundle">
+      <img src="assets/gabriel-mihalcea-1jyRHJPkpz8-unsplash.jpg" alt="a bright banana bundle">
     </div>
   </div>   
   
   <!--Creating info section-->
-  <div class="info-container">
-    <h1>Some random information.</h1>
+  <div class="info-container" id="bundles">
+    <h1>Bananarama Bundles</h1>
       <div class ="info-content">
         <div class ="img-text">
-          <div class="empty-box"></div>
-          <p>This is a thing with some info text or something inside of it.</p>
+          <h3>Banana Bunch</h3>          
+          <div class="empty-box"> 
+            <p>One Bundle/week</p>
+          </div>
+          <p>$12.99</p>
         </div>
         <div class ="img-text">
-          <div class="empty-box"></div>
-          <p>This is a thing with some info text or something inside of it.</p>
+          <h3>Chimp Choice</h3>
+          <div class="empty-box"> 
+            <p>Four Bundles/week</p>
+          </div>
+          <p>$22.99</p>          
         </div>
           <div class ="img-text">
-          <div class="empty-box"></div>
-          <p>This is a thing with some info text or something inside of it.</p>
-        </div>
-        <div class ="img-text">
-          <div class="empty-box"></div>
-          <p>This is a thing with some info text or something inside of it.</p>
+          <h3>King Kong Club</h3>
+          <div class="empty-box">
+            <p>Eight Bundles/week</p>
+          </div>
+          <p>$45.99</p>
         </div>
       </div>   
   </div>
 
   <!--Creating quote section-->
   <div class="quote-container">
-    <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-    <p id="quote-credit">-Me</p>  
+    <p>"As a devoted fruit enthusiast, subscribing to Banana Subscription Bananarama has truly been a game-changer for me. The convenience of having a weekly supply of fresh, ripe bananas delivered right to my doorstep is unmatched. Not only are the bananas of exceptional quality, but the variety of bananas offered each week adds an exciting twist to my fruit consumption routine."</p>
+    <p id="quote-credit">-A Very Satisfied Customer</p>  
   </div>
 
   <!--Creating call to action section-->
-  <div class="cta-section">
+  <div class="cta-section" id="subscribe">
     <div class="cta-container">
       <div class="cta-text">
-        <h1>Call to action! It's time!</h1>
-        <p>Sign up for our products by clicking that button over there!</p>  
+        <h1>Subscribe now!</h1>
+        <p>It's bananas!</p>  
       </div>
-      <button>Sign up</button>
+      <button class="hover-button">Sign up</button>
     </div>
   </div>
 
   <!--Creating footer section-->
   <div class="footer">
-    <footer>The Banana Business</footer>
+    <footer>Bananarama</footer>
   </div>
+  <script src="actions.js"></script>      
 </body>
 </html>
